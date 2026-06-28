@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbitrum.Labs - Concepts</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .active-nav {
+            background: linear-gradient(135deg, #f43f5e 0%, #3b82f6 100%);
+            color: white !important;
+            border-radius: 0.75rem;
+        }
+    </style>
+</head>
+<body class="bg-[#030712] text-slate-100 min-h-screen flex flex-col font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <header class="bg-[#030712]/90 sticky top-0 z-50 border-b border-slate-900/50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 cursor-pointer">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-rose-500 to-blue-500 flex items-center justify-center font-bold text-xs">AL</div>
+                <span class="text-lg font-bold tracking-tight text-slate-200">Arbitrum.Labs</span>
+            </a>
+            <nav class="flex items-center space-x-1 sm:space-x-2">
+                <a href="index.html" class="px-4 py-2 text-sm font-medium text-slate-400 hover:text-slate-200 transition-all">Home</a>
+                <a href="concepts.html" class="px-4 py-2 text-sm font-medium transition-all active-nav">Concepts</a>
+                <a href="prices.html" class="px-4 py-2 text-sm font-medium text-slate-400 hover:text-slate-200 transition-all">Live Prices</a>
+                <a href="simulator.html" class="px-4 py-2 text-sm font-medium text-slate-400 hover:text-slate-200 transition-all">Simulator</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl w-full mx-auto px-6 py-12">
+        <section class="space-y-12">
+            <div class="space-y-2">
+                <span class="text-xs font-bold tracking-widest text-blue-500 uppercase">The Fundamentals</span>
+                <h2 class="text-3xl font-bold tracking-tight text-white">Core Web3 Concepts</h2>
+                <p class="text-slate-400 text-sm max-w-2xl">Four side-by-side comparisons that capture the mental model shifts behind decentralized tech.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-[#0b1329] border border-slate-900 rounded-2xl p-6 space-y-6">
+                    <div class="space-y-1">
+                        <h3 class="text-lg font-bold text-slate-200">Web2 vs Web3</h3>
+                        <p class="text-xs text-slate-400">The shift from platforms to protocols</p>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-xs">
+                            <thead>
+                                <tr class="text-slate-500 border-b border-slate-900">
+                                    <th class="pb-3 font-medium w-1/3"></th>
+                                    <th class="pb-3 font-semibold text-blue-400">WEB2</th>
+                                    <th class="pb-3 font-semibold text-cyan-400">WEB3</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-900/50 text-slate-300">
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Who owns data</td>
+                                    <td class="py-3">The platform (Meta, Google)</td>
+                                    <td class="py-3 font-medium text-slate-200">You – in your wallet</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Identity</td>
+                                    <td class="py-3">Email + password per app</td>
+                                    <td class="py-3">One wallet, every app</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Money</td>
+                                    <td class="py-3">Banks, Stripe, PayPal</td>
+                                    <td class="py-3 text-slate-200">Native to the protocol</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Trust model</td>
+                                    <td class="py-3">Trust the company</td>
+                                    <td class="py-3 text-emerald-400">Trust the code & math</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Backend</td>
+                                    <td class="py-3">Centralized servers</td>
+                                    <td class="py-3">Smart contracts on a chain</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-[#0b1329] border border-slate-900 rounded-2xl p-6 space-y-6">
+                    <div class="space-y-1">
+                        <h3 class="text-lg font-bold text-slate-200">Ethereum vs Bitcoin</h3>
+                        <p class="text-xs text-slate-400">Two very different visions for a blockchain</p>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-xs">
+                            <thead>
+                                <tr class="text-slate-500 border-b border-slate-900">
+                                    <th class="pb-3 font-medium w-1/3"></th>
+                                    <th class="pb-3 font-semibold text-amber-500">BITCOIN</th>
+                                    <th class="pb-3 font-semibold text-indigo-400">ETHEREUM</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-900/50 text-slate-300">
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Purpose</td>
+                                    <td class="py-3">Digital gold, store of value</td>
+                                    <td class="py-3">Programmable world computer</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Smart contracts</td>
+                                    <td class="py-3">Very limited scripting</td>
+                                    <td class="py-3 text-slate-200">Full Turing-complete (Solidity)</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Consensus</td>
+                                    <td class="py-3">Proof of Work</td>
+                                    <td class="py-3">Proof of Stake (since 2022)</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Block Time</td>
+                                    <td class="py-3">~10 minutes</td>
+                                    <td class="py-3">~12 seconds</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Supply</td>
+                                    <td class="py-3">Capped at 21M BTC</td>
+                                    <td class="py-3">No hard cap, deflationary</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-[#0b1329] border border-slate-900 rounded-2xl p-6 space-y-6">
+                    <div class="space-y-1">
+                        <h3 class="text-lg font-bold text-slate-200">Public Key vs Private Key</h3>
+                        <p class="text-xs text-slate-400">The two halves of your crypto identity</p>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-xs">
+                            <thead>
+                                <tr class="text-slate-500 border-b border-slate-900">
+                                    <th class="pb-3 font-medium w-1/3"></th>
+                                    <th class="pb-3 font-semibold text-emerald-400">PUBLIC KEY</th>
+                                    <th class="pb-3 font-semibold text-rose-500">PRIVATE KEY</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-900/50 text-slate-300">
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Share it?</td>
+                                    <td class="py-3 text-emerald-400 font-medium">Yes – it's your address</td>
+                                    <td class="py-3 text-rose-500 font-bold">Never. Ever. Not once.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">What it does</td>
+                                    <td class="py-3">Receives funds & messages</td>
+                                    <td class="py-3">Signs transactions</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">If lost...</td>
+                                    <td class="py-3">No problem, derive again</td>
+                                    <td class="py-3 text-rose-400">All funds gone forever</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Analogy</td>
+                                    <td class="py-3">Your bank account number</td>
+                                    <td class="py-3">Your master password + PIN</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Length</td>
+                                    <td class="py-3">20 bytes (Ethereum address)</td>
+                                    <td class="py-3">32 bytes (256-bit secret)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-[#0b1329] border border-slate-900 rounded-2xl p-6 space-y-6">
+                    <div class="space-y-1">
+                        <h3 class="text-lg font-bold text-slate-200">Blockchain vs Traditional Database</h3>
+                        <p class="text-xs text-slate-400">Why a chain isn't just a slow Postgres</p>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-xs">
+                            <thead>
+                                <tr class="text-slate-500 border-b border-slate-900">
+                                    <th class="pb-3 font-medium w-1/3"></th>
+                                    <th class="pb-3 font-semibold text-slate-400">TRADITIONAL DB</th>
+                                    <th class="pb-3 font-semibold text-blue-400">BLOCKCHAIN</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-900/50 text-slate-300">
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Who can write</td>
+                                    <td class="py-3">Admin with credentials</td>
+                                    <td class="py-3 text-slate-200">Anyone with a valid signature</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Can data be edited</td>
+                                    <td class="py-3">Yes – UPDATE/DELETE freely</td>
+                                    <td class="py-3 text-amber-500">No – append-only, immutable</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Who verifies</td>
+                                    <td class="py-3">Trust the DB owner</td>
+                                    <td class="py-3">Thousands of independent nodes</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Downtime</td>
+                                    <td class="py-3">Server can go down</td>
+                                    <td class="py-3 text-emerald-400">Network keeps running 24/7</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 text-slate-500 font-medium">Best for</td>
+                                    <td class="py-3">Internal app data, speed</td>
+                                    <td class="py-3 text-slate-200">Money, ownership, trustless tracking</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-950 bg-[#030712] py-8 text-center text-xs text-slate-500 space-y-2">
+        <p class="font-semibold text-slate-400">Developer: <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-blue-400">Web3 Architect</span> | Batch: <span class="text-cyan-400">Arbitrum.Labs-Alpha</span></p>
+        <div class="pt-2">
+            <a href="https://github.com" target="_blank" class="inline-flex items-center gap-1 text-slate-400 hover:text-white border border-slate-900 bg-[#0b1329] px-3 py-1 rounded-md transition-all">
+                🌐 View Project on GitHub
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
